@@ -5,10 +5,22 @@
   </HEAD>
   <BODY>
     <div class="container">
-      <header><span class "1blPreview">Header</span></header>
-      <aside class="sidebar-1"><span class="1blPreview">Left Sidebar</span></aside>
-      <main><span class="1blPreview">Main Content Area</span></main>
-      <footer><span class="1blPreview">Footer</span></footer>
+      <header> <img src="DenverSkyline.jpg" style="display: block; margin: 0 auto;" width="700px" height="80px" alt="Skyline"></header>
+      <aside class="sidebar-1">
+        Layer Visibility
+        <div class="sidebar-1-top">
+          <arcgis-layer-list reference-element="myMap"></arcgis-layer-list>
+        </div>
+        Legend
+        <div class="sidebar-1-bottom">
+          <arcgis-legend reference-element="myMap"></arcgis-legend>
+        </div>
+      </aside>
+      <main><arcgis-map item-id="99a0ade7ac9543cdb7cc633e07a05fd7" id="myMap" center="-104.95, 39.75" zoom="15">
+        <arcgis-zoom slot="top-left"></arcgis-zoom>
+        </arcgis-map>
+    </main>
+      <footer><span class="1blPreview">Grocery icon from www.flaticon.com licensed by CC 3.0</span></footer>
     </div>
   </BODY>
 </HTML>
